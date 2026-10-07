@@ -1,5 +1,9 @@
 plugins {
     id("com.android.application")
+    id("kotlin-android")//Must need to add this line
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services")
+    // END: FlutterFire Configuration
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
