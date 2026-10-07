@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2575 850" width="2575" height="850">
+  <title>Ghoroa Mart</title>
+  <defs>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F98F52"/>
+      <stop offset="1" stop-color="#F65F3A"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F98F52"/>
+      <stop offset="1" stop-color="#F6603B"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5EBFBC"/>
+      <stop offset="0.45" stop-color="#22AEAE"/>
+      <stop offset="1" stop-color="#16A5A5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- transparent background: no background rectangle -->
+
+  <!-- icon -->
+  <g transform="matrix(0.74 0 0 0.706 -376 -59.5)">
+    <!-- chimneys -->
+    <rect x="926" y="352" width="72" height="115" rx="14" fill="#18B0AE"/>
+    <rect x="1291" y="352" width="72" height="115" rx="14" fill="#F78B4E"/>
+
+    <!-- roof -->
+    <path d="M 912 515 L 1145 350 L 1483 582" fill="none" stroke="url(#roofGrad)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 1020 487 L 1145 402 L 1265 487 L 1145 427 Z" fill="#F7733F"/>
+
+    <!-- cart handle -->
+    <path d="M 728 484 H 797 Q 852 488 870 542 L 906 668" fill="none" stroke="#1B9BA0" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 728 506 H 797 Q 834 509 848 548 L 885 672" fill="none" stroke="#2B3F5E" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 803 581 L 858 543" fill="none" stroke="#1B9BA0" stroke-width="46" stroke-linecap="round"/>
+
+    <!-- teal basket half -->
+    <path d="M 903 585 H 1265 C 1218 752 1100 842 958 874 L 930 812 Z" fill="url(#tealGrad)"/>
+
+    <!-- orange basket half -->
+    <path d="M 1290 585 H 1403 Q 1432 590 1430 622 L 1370 826 Q 1360 874 1310 876 H 958 C 1110 842 1235 732 1290 585 Z" fill="url(#orangeGrad)"/>
+
+    <!-- speed swooshes -->
+    <path d="M 707 690 C 800 702 900 697 962 682 C 1004 672 1060 660 1112 666 C 1022 712 922 742 820 736 C 780 731 740 712 707 690 Z" fill="#1E8C9A"/>
+    <path d="M 760 744 C 880 750 980 754 1070 742 C 1020 776 930 802 860 799 C 820 791 790 762 760 744 Z" fill="#1E9AA3"/>
+    <path d="M 812 794 C 880 802 922 813 962 813 L 978 848 L 940 852 C 890 836 850 811 812 794 Z" fill="#1E8C9A"/>
+
+    <!-- cart base frame -->
+    <path d="M 940 832 C 905 846 889 882 898 912 C 909 951 936 968 976 968 H 1345 Q 1368 968 1368 946 Q 1368 925 1345 925 H 962 Q 936 925 937 900 Q 940 882 958 872 Z" fill="#2B3F5E"/>
+
+    <!-- wheels -->
+    <circle cx="1019" cy="1007" r="55" fill="#2B3F5E"/>
+    <circle cx="1019" cy="1007" r="20" fill="#FFFFFF"/>
+    <circle cx="1269" cy="1007" r="55" fill="#2B3F5E"/>
+    <circle cx="1269" cy="1007" r="20" fill="#FFFFFF"/>
+  </g>
+
+  <!-- wordmark -->
+  <g font-family="Poppins, Montserrat, 'Segoe UI', Arial, Helvetica, sans-serif" font-weight="700" font-size="265">
+    <text x="810" y="525" fill="#0FA3A3" textLength="938" lengthAdjust="spacingAndGlyphs">Ghoroa</text>
+    <text x="1845" y="525" fill="#F7623C" textLength="595" lengthAdjust="spacingAndGlyphs">Mart</text>
+  </g>
+</svg>
