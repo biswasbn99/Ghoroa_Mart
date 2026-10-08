@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ghoroa_mart/app/extensions/localization_extension.dart';
 import 'package:ghoroa_mart/features/auth/presentation/widgets/app_logo.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -13,6 +14,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
+  final localizations=context.localizations;
+    
     return Scaffold(
       body: Center(
         child: Padding(
@@ -25,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
           
               CircularProgressIndicator(),
               const SizedBox(height: 16,),
-              Text('Version 1.0.0')
+              Text('${localizations.version} 1.0.0')
             ],
           ),
         ),
