@@ -21,6 +21,8 @@ dependencies:
   firebase_analytics: ^12.6.0
   flutter_svg: ^2.3.0
   intl: ^0.20.2
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.6
 
 
 
