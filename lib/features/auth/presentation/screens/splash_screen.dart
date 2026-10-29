@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ghoroa_mart/app/extensions/localization_extension.dart';
 import 'package:ghoroa_mart/app/providers/locale_provider.dart';
+import 'package:ghoroa_mart/app/providers/theme_provider.dart';
 import 'package:ghoroa_mart/features/auth/presentation/widgets/app_logo.dart';
 import 'package:provider/provider.dart';
 
@@ -27,6 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Spacer(),
               AppLogo(),
               LocaleChangerDropdown(),
+              ThemeChangerDropdown(),
               Spacer(),
 
               CircularProgressIndicator(),
@@ -62,6 +64,29 @@ class LocaleChangerDropdown extends StatelessWidget {
           },
         );
       },
+    );
+  }
+}
+
+class ThemeChangerDropdown extends StatelessWidget {
+  const ThemeChangerDropdown({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<ThemeProvider>(
+      builder: (context,themeProvider,_) {
+        return DropdownButton<ThemeMode>(
+          value:themeProvider.currentThemeMode ,
+          items:themeProvider.themeModes.map((e){
+            return DropdownMenuItem(value:e,
+            
+            child: Text(e.toString().toUpperCase()), );
+          }).toList() , onChanged: (ThemeMode? newThemeMode){
+            if(newThemeMode !=null){
+              themeProvider.changeThemeMode(newThemeMode);
+            }
+          });
+      }
     );
   }
 }
